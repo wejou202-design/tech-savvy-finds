@@ -1,5 +1,6 @@
 import heroImg from "@/assets/hero-tech.jpg";
 import { Button } from "@/components/ui/button";
+import { branding } from "@/config/branding";
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
       <div className="container relative z-10 h-[60vh] flex items-end pb-10">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-heading leading-tight">
-            Las mejores herramientas y gadgets para potenciar tu productividad
+            {branding.siteName}: herramientas y gadgets para potenciar tu productividad
           </h1>
           <p className="mt-3 text-muted-foreground max-w-2xl">
             Reseñas honestas, comparativas claras y ofertas de afiliado seleccionadas para ayudarte a elegir mejor.

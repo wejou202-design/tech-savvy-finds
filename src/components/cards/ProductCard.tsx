@@ -28,7 +28,7 @@ const ProductCard = ({ title, description, image, rating, ctaLabel, href, tag }:
       <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>
       <div className="mt-3">
         <Button asChild variant="cta" className="w-full">
-          <a href={href} target="_blank" rel="nofollow noopener noreferrer">{ctaLabel}</a>
+          <a href={href} target="_blank" rel="nofollow sponsored noopener noreferrer">{ctaLabel}</a>
         </Button>
       </div>
     </article>

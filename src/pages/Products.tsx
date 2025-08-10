@@ -46,9 +46,9 @@ const Products = () => {
   return (
     <main className="container py-10">
       <Helmet>
-        <title>Productos Tecnológicos | TechSavvy Finds</title>
+        <title>Productos Tecnológicos | EligeInteligente</title>
         <meta name="description" content="Encuentra gadgets y accesorios de oficina con reseñas, valoraciones y comparativas." />
-        <link rel="canonical" href="/productos" />
+        <link rel="canonical" href="https://eligeinteligente.com/productos" />
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',

@@ -3,14 +3,15 @@ import Hero from "@/components/sections/Hero";
 import NewsletterBar from "@/components/sections/NewsletterBar";
 import { Button } from "@/components/ui/button";
 import { Wrench, Headphones } from "lucide-react";
+import { branding } from "@/config/branding";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>TechSavvy Finds: Software y Gadgets</title>
+        <title>{branding.siteName}: Software y Gadgets</title>
         <meta name="description" content="Descubre herramientas de software y gadgets con reseñas, comparativas y ofertas de afiliado." />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href={`${branding.domain}/`} />
       </Helmet>
 
       <main>

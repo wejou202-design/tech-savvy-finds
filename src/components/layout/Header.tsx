@@ -2,10 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { branding } from "@/config/branding";
 
 const navItems = [
   { to: "/software", label: "Software & Herramientas" },
   { to: "/productos", label: "Productos Tech" },
+  { to: "/categorias", label: "Categorías" },
 ];
 
 const Header = () => {
@@ -14,9 +16,13 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">TS</span>
-          <span className="font-heading text-lg">TechSavvy Finds</span>
+        <Link to="/" className="flex items-center gap-3">
+          {branding.logoUrl ? (
+            <img src={branding.logoUrl} alt={`${branding.siteName} logo`} className="h-8 w-8 rounded" loading="lazy" />
+          ) : (
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">EI</span>
+          )}
+          <span className="font-heading text-lg">{branding.siteName}</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6" aria-label="Navegación principal">

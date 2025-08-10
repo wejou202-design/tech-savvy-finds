@@ -51,9 +51,9 @@ const Software = () => {
   return (
     <main className="container py-10">
       <Helmet>
-        <title>Software y Herramientas | TechSavvy Finds</title>
+        <title>Software y Herramientas | EligeInteligente</title>
         <meta name="description" content="Explora las mejores herramientas de software con reseñas, valoraciones y ofertas." />
-        <link rel="canonical" href="/software" />
+        <link rel="canonical" href="https://eligeinteligente.com/software" />
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
